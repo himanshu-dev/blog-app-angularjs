@@ -1,0 +1,27 @@
+.header {
+  height: 56px;
+}
+
+.distribute-items {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.app-name {
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  width: auto;
+}
+
+li {
+  display: inline-block;
+  padding: 8px;
+  color: var(--color-grey);
+}
