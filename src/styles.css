@@ -1,13 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 html, body {
   font-family: Source Sans Pro;
+  /*min-height: 100%;*/
 }
 
 :root {
   --color-primary: #5cb85c;
-  --color-grey: rgba(0, 0, 0, 0.3);
   --color-black: rgba(0, 0, 0, 1);
+  --color-black-x: rgba(0, 0, 0, 0.3);
   --color-white: #fff;
+  --color-white-x: #f3f3f3;
 }
 
 ol, ul, dl {

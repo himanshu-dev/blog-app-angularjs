@@ -9,6 +9,7 @@ import {SignUpComponent} from "../component/sign-up/sign-up";
 import {NewArticleComponent} from "../component/new-article/new-article";
 import {SettingsComponent} from "../component/settings/settings";
 import {RoutingModule} from "./routing.module";
+import {FooterComponent} from "../component/footer/footer";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {RoutingModule} from "./routing.module";
     SignInComponent,
     SignUpComponent,
     NewArticleComponent,
-    SettingsComponent
+    SettingsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
