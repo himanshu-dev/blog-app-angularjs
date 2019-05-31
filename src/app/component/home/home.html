@@ -1,0 +1,48 @@
+<div class="box">
+  <p class="text-center app-name">blog app</p>
+  <p class="text-center app-description"><i>An angularJs app with cloud firestore noSql db</i></p>
+</div>
+<div class="container pt-4">
+  <div class="row">
+    <div class="col-12 form-group">
+      <input type="radio" name="feeds" id="your-feeds" checked>
+      <label for="your-feeds">Your Feeds</label>
+      <input type="radio" name="feeds" id="global-feeds">
+      <label for="global-feeds">Global Feeds</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-9">
+      <div class="feed-cell" *ngFor="let item of arr">
+        <div class="row">
+          <div class="col-1">
+            <img alt="" src="https://static.productionready.io/images/smiley-cyrus.jpg" alt="">
+          </div>
+          <div class="col-9">
+            <p>user name</p>
+            <p>date</p>
+          </div>
+          <div class="col-2 text-right">
+            <button class="btn btn-outline-success" style="height: 30px; padding: 3px 12px 3px 12px;">
+              <i class="ion-heart"></i> 0
+            </button>
+          </div>
+        </div>
+
+        <h5 class="mb-0 mt-3">Blog Title</h5>
+        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cum dicta earum explicabo id, ipsam ipsum iusto mollitia nam nostrum nulla perspiciatis, quis tempora unde veritatis. Aliquam doloribus id labore.</p>
+        <p><a href="#" class="">read more...</a></p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="row">
+        <div class="col-12 p-3 popular-tags">
+          <p>Popular Tags</p>
+          <p>
+            <span class="tag bg-secondary" *ngFor="let tag of tags">{{tag}}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
