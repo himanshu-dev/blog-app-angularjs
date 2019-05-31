@@ -6,5 +6,5 @@ import {Component} from "@angular/core";
   styleUrls: ['/header.less']
 })
 export class HeaderComponent {
-  isUserSignedIn = true
+  isUserSignedIn = false
 }

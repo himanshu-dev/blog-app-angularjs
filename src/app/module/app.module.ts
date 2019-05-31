@@ -8,6 +8,7 @@ import {SignInComponent} from "../component/sign-in/sign-in";
 import {SignUpComponent} from "../component/sign-up/sign-up";
 import {NewArticleComponent} from "../component/new-article/new-article";
 import {SettingsComponent} from "../component/settings/settings";
+import {RoutingModule} from "./routing.module";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {SettingsComponent} from "../component/settings/settings";
     SettingsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [RootComponent]

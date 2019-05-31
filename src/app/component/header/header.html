@@ -8,16 +8,22 @@
     <div class="col-9">
       <div class="distribute-items" style="justify-content: flex-end;">
         <ul *ngIf="!isUserSignedIn">
-          <li class="active">Home</li>
-          <li>Sign in</li>
-          <li>Sign up</li>
+          <li routerLink="home"
+              routerLinkActive="active">Home</li>
+          <li routerLink="sign-in"
+              routerLinkActive="active">Sign in</li>
+          <li routerLink="sign-up"
+              routerLinkActive="active">Sign up</li>
         </ul>
         <ul *ngIf="isUserSignedIn">
-          <li class="active">Home</li>
-          <li>New article</li>
-          <li>Settings</li>
+          <li routerLink="home"
+              routerLinkActive="active">Home</li>
+          <li routerLink="new-article"
+              routerLinkActive="active">New article</li>
+          <li routerLink="settings"
+              routerLinkActive="active">Settings</li>
           <li>Username</li>
-          <li>Sign out</li>
+          <li routerLink="">Sign out</li>
         </ul>
       </div>
     </div>
