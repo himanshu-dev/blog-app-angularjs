@@ -1,16 +1,23 @@
 <div class="container">
   <div class="row header">
-    <div class="col-6">
+    <div class="col-3">
       <div class="distribute-items">
         <span class="app-name">blog app</span>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-9">
       <div class="distribute-items" style="justify-content: flex-end;">
-        <ul>
+        <ul *ngIf="!isUserSignedIn">
           <li class="active">Home</li>
           <li>Sign in</li>
           <li>Sign up</li>
+        </ul>
+        <ul *ngIf="isUserSignedIn">
+          <li class="active">Home</li>
+          <li>New article</li>
+          <li>Settings</li>
+          <li>Username</li>
+          <li>Sign out</li>
         </ul>
       </div>
     </div>

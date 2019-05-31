@@ -6,6 +6,7 @@ html, body {
 :root {
   --color-primary: #5cb85c;
   --color-grey: rgba(0, 0, 0, 0.3);
+  --color-black: rgba(0, 0, 0, 1);
   --color-white: #fff;
 }
 
